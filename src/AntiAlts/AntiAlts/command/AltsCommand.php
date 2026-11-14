@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Lunaria\AntiAlts\command;
+namespace AntiAlts\AntiAlts\command;
 
 use Lunaria\AntiAlts\Main;
 use pocketmine\command\Command;
