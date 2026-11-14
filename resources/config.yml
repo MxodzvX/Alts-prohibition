@@ -1,0 +1,40 @@
+settings:
+  # A partir de este riesgo se envía alerta al staff. No banea automáticamente.
+  risk-threshold: 60
+  high-risk-matches: 3
+  alert-on-join: true
+  hash-identifiers: true
+
+checks:
+  ip: true
+  xuid: true
+  uuid: true
+  device-id: true
+  client-random-id: true
+  device-os: false
+  device-model: false
+  # PMMP no proporciona un HWID físico verificable.
+  hwid: false
+
+risk:
+  weights:
+    ip: 10
+    xuid: 45
+    uuid: 30
+    device-id: 35
+    client-random-id: 25
+    device-os: 5
+    device-model: 5
+  # Coincidencias de IP/dispositivo pueden ser familias o redes compartidas.
+  multi-match-bonus: 20
+
+alerts:
+  format: "§8[§dAntiAlts§8] §f{player} §7riesgo: §c{risk}/100 §7| Coincidencias: §f{matches}"
+  detail-format: "§7- {identifier}: §f{accounts}"
+
+messages:
+  no-player: "§cNo se encontró ese jugador en los registros."
+  no-alts: "§aNo se encontraron cuentas relacionadas con {player}."
+  header: "§dCuentas relacionadas con {player}:"
+  entry: "§7- §f{name} §8| §7Riesgo: §c{risk} §8| §7Coincidencias: §f{matches}"
+  no-permission: "§cNo tienes permiso."
