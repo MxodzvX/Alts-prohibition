@@ -1,8 +1,8 @@
 name: AntiAltsAntiSpoofer
-main: Lunaria\AntiAlts\Main
+main: AntiAlts\AntiAlts\Main
 version: 1.0.0
 api: 5.0.0
-author: Lunaria
+author: Nuniws
 description: Anti-alt and anti-spoofer detection for PocketMine-MP 5
 commands:
   alts:
