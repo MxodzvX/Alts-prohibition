@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Lunaria\AntiAlts\alert;
+namespace AntiAlts\AntiAlts\alert;
 
-use Lunaria\AntiAlts\Main;
+use AntiAlts\AntiAlts\Main;
 use pocketmine\player\Player;
 
 final class AlertManager{
