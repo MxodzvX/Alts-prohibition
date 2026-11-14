@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Lunaria\AntiAlts\analysis;
+namespace AntiAlts\AntiAlts\analysis;
 
-use Lunaria\AntiAlts\Main;
+use AntiAlts\AntiAlts\Main;
 
 final class RiskAnalyzer{
     public function __construct(private Main $plugin){}
