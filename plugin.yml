@@ -1,0 +1,16 @@
+name: AntiAltsAntiSpoofer
+main: Lunaria\AntiAlts\Main
+version: 1.0.0
+api: 5.0.0
+author: Lunaria
+description: Anti-alt and anti-spoofer detection for PocketMine-MP 5
+commands:
+  alts:
+    description: Shows accounts linked to a player
+    usage: "/alts <player>"
+    permission: antialts.command
+permissions:
+  antialts.command:
+    default: op
+  antialts.alerts:
+    default: op
